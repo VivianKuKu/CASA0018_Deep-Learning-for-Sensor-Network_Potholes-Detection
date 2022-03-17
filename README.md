@@ -1,7 +1,5 @@
 # CASA0018_Deep-Learning-for-Sensor-Network_Potholes-Detection
 
-# Report title goes here
-
 name of author, link to github repo with project work in / link to Edge Impulse projects
 
 ## Introduction
