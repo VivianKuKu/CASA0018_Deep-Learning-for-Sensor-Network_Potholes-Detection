@@ -9,7 +9,7 @@ name of author, link to github repo with project work in / link to Edge Impulse 
 
 
 Cities are devoting to create various mobility choices for citizens. Multiple choices of vehicles are encouraged to achieve XX
-Mobility, Last mile, e-scooter, walkable city, last-mile, 10-min city
+Mobility, Last mile, e-scooter, walkable city, last-mile, 15-min city
 
 
 *probably ~200 words and images are good!*
