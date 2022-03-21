@@ -10,7 +10,7 @@ name of author, link to github repo with project work in / link to Edge Impulse 
 *probably ~200 words and images are good!*
 
 ## Research Question
-What is the problem you are trying to solve
+Can mobile phone be applied to detect potholes on the roads?
 
 *probably 1 or 2 sentences*
 
