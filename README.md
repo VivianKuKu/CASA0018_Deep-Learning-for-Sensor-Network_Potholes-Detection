@@ -7,10 +7,15 @@ name of author, link to github repo with project work in / link to Edge Impulse 
 - your inspiration for making the project 
 - examples that it is based on. 
 
+
+Cities are devoting to create various mobility choices for citizens. Multiple choices of vehicles are encouraged to achieve XX
+Mobility, Last mile, e-scooter, walkable city, last-mile, 10-min city
+
+
 *probably ~200 words and images are good!*
 
 ## Research Question
-Can mobile phone be applied to detect potholes on the roads?
+Can a mobile phone be applied to detect potholes on the roads?
 
 *probably 1 or 2 sentences*
 
