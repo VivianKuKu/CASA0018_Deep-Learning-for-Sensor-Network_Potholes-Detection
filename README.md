@@ -39,6 +39,11 @@ What experiments did you run to test your project? What parameters did you chang
 
 *probably ~300 words and graphs and tables are usually good to convey your results!*
 
+## Deployment
+
+1. https://github.com/tensorflow/examples/tree/master/lite/examples/image_classification/ios
+2. https://codelabs.developers.google.com/codelabs/recognize-flowers-with-tensorflow-on-ios/#0
+
 ## Results and Observations
 Synthesis the main results and observations you made from building the project. Did it work perfectly? Why not? What worked and what didn't? Why? What would you do next if you had more time?  
 
