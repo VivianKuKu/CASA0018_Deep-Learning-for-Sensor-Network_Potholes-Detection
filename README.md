@@ -7,10 +7,15 @@ name of author, link to github repo with project work in / link to Edge Impulse 
 - your inspiration for making the project 
 - examples that it is based on. 
 
+
+Cities are devoting to create various mobility choices for citizens. Multiple choices of vehicles are encouraged to achieve XX
+Mobility, Last mile, e-scooter, walkable city, last-mile, 15-min city
+
+
 *probably ~200 words and images are good!*
 
 ## Research Question
-What is the problem you are trying to solve
+Can a mobile phone be applied to detect potholes on the roads?
 
 *probably 1 or 2 sentences*
 
@@ -33,6 +38,11 @@ This is a Deep Learning project! What model architecture did you use? Did you tr
 What experiments did you run to test your project? What parameters did you change? How did you measure performance? Did you write any scripts to evaluate performance? Did you use any tools to evaluate performance? Do you have graphs of results? 
 
 *probably ~300 words and graphs and tables are usually good to convey your results!*
+
+## Deployment
+
+1. https://github.com/tensorflow/examples/tree/master/lite/examples/image_classification/ios
+2. https://codelabs.developers.google.com/codelabs/recognize-flowers-with-tensorflow-on-ios/#0
 
 ## Results and Observations
 Synthesis the main results and observations you made from building the project. Did it work perfectly? Why not? What worked and what didn't? Why? What would you do next if you had more time?  
