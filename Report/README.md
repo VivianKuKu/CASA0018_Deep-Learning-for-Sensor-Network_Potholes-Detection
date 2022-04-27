@@ -54,64 +54,52 @@ Table 2. Model testing based on the similar test environment
 
 <img width="700" alt="Screenshot 2022-04-27 at 17 31 07" src="https://user-images.githubusercontent.com/52306317/165568120-af02e928-85f6-4cb3-9812-849c65fbda66.png">
 
+<img width="700" alt="image" src="https://user-images.githubusercontent.com/52306317/165568958-380e52b0-8288-4741-af96-b410db097f95.png">
 
 Figure 6. Model information on the transfer learning 
+
+<img width="700" alt="image" src="https://user-images.githubusercontent.com/52306317/165569030-53b9f74e-7950-4357-852f-4383497e2281.png">
+
 Figure 7. Schematic Diagram of Inception V3
 (Google Cloud, 2022)
+
 
 ### VI. Experiments
 
 There are 13 parameters shown in Table 3 that are tested in the Colab environment and Python script to obtain the best accuracy score on the testing dataset. Since the Inception V3 model has been chosen in the prior step, the following experiment focuses on optimising the number of epochs, batch size, and image colour channel. In addition, it is proven that using the data augmentation function will increase the accuracy of the testing data by 3.4%. Another testing result shows that Grayscale images lead to a 50% accuracy score where most potholes were detected as plain roads. In the end, Inception V3 with 64 epochs, 64 examples per iteration (batch size) and RGB images are applied to the model, making a 97.7% accuracy on training data, 96.9% on validation data, 95.0% on testing data. (* Fine-tune Optimizer = SGD(lr=0.0001, momentum=0.9)
 A confusion matrix is applied to further understand the performance of the model. In the case of this application, Recall is worth investigating since the application wants to detect as many potholes correctly as possible. Recall means the ratio of predicted positive to the total real positive cases while Precision means the ratio of real positive cases to the total positive predictions. Fortunately, the Recall of potholes achieves 99%, presenting a high capability of detecting potholes on the testing data. However, the risk of misprediction lies in the 92% of Precision score on potholes, resulting in examiners will take more time and effort to check the situation and report errors.
 The last work in the Colab is to convert the TensorFlow model into the TensorFlow Lite float model and then into the TensorFlow Lite quantization model which reduces the memory requirement and computational cost of using a neural network.
+
 Table 3. Experimental parameters and results
-#	Parameters	Experimented Range	Result
-1	Input layers	(Depending on each model)	IncenptionV3 (310 layers in total)
-2	Number of neutrons	(Depending on each model)	IncenptionV3
-3	Number of epoch	20, 32, 64	64 epochs is better than 32 and 20 epochs.
-4	Number of batch size	32, 64	64 is better than 32.
-5	Loss function	binary_crossentropy, categorical_crossentropy, SparseCategoricalCrossentropy 	categorical_crossentropy is slightly better than other two loss functions.
-6	Activation function	Softmax or Sigmoid	Did not have significant difference.
-7	Optimizer	adam, RMSprop(lr=0.0001)	adam is slightly better than RMSprop
-8	Image processing	Yes (image resizing and cropping) or No	After processing image, the accuracy on real-world application significantly increases.
-9	Data augmentation	Yes (rotation, height shift, zoom) or No	After using data augmentation, the accuracy on the test data increases by 3.4%
-10	Pre-trained model	VGG16, ResNet50, Inception V3, MobileNet, MobileNet V2	InceptionV3 has the best accuracy rate on both validation and test datasets.
-11	Fine-tune layer	1 or 2	Did not have a significant difference between parameters and neither improve the accuracy rate compared to non fine-tune model.
-12	Fine-tune epoch	10 or 20	
-13	Colour depth	rgb or grayscale	rgb is way better than grayscale.
+
+
+<img width="700" alt="Screenshot 2022-04-27 at 17 35 12" src="https://user-images.githubusercontent.com/52306317/165570272-781370de-a57b-43e3-aa99-cae872e3eb6f.png">
+
+
 
 Table 4. Fine-tuning of InceptionV3 model
-#	Model	Epoch	Batch Size	Fine-tune Layer	Fine-tune Epoch	Image Colour	Validation Accuracy	Testing Accuracy
-1	Inceptionv3	20	32	-	-	RGB	92.5%	94%
-2	Inceptionv3	20	32	1	10	RGB	84.9%	91%
-3	Inceptionv3	20	32	1	20	RGB	89.3%	91%
-4	Inceptionv3	20	32	2	20	RGB	86.8%	88%
-5	Inceptionv3	20	32	2	10	RGB	86.2%	91%
-6	Inceptionv3	20	32	-	-	Grayscale	50.3%	50%
-7	Inceptionv3	64	32	-	-	RGB	95.0%	92%
-8	Inceptionv3	64	64	-	-	RGB	96.9%	95%
+
+<img width="700" alt="Screenshot 2022-04-27 at 17 35 50" src="https://user-images.githubusercontent.com/52306317/165570720-4142d3f9-5f0b-4288-b806-dd81ccef0356.png">
+
+
+<img width="700" alt="image" src="https://user-images.githubusercontent.com/52306317/165570945-ae1bc2d8-0ca2-41c4-9680-93f2992f0ff7.png">
+
 Figure 8. Training and validation accuracy and loss of final model
+
+
+
 Table 5. Accuracies of each dataset
-	Training Accuracy	Validation Accuracy	Testing Accuracy
-TF model	97.7%	96.9%	95.0%
+
 
 Table 6. Confusion matrix for the testing dataset
-	Predicted Plain Road	Predicted Pothole
-Actual Plain Road	72	7
-Actual Pothole	1	79
+
 
 Table 7. Metrics of a confusion matrix for the testing dataset
-	Precision	Recall	f1-score	Support
-Plain Road	99%	91%	95%	79
-Pothole	92%	99%	95%	80
-Accuracy			95%	159
+
 
 Table 8. Model sizes of TF model, TF Lite float model, and TF Lite quantization model
-	Model Size
-TF model	86098KBs
-TF Lite model (float)	85236KBs
-TF Lite model (quantization)	21748KBs
-(About 25% of the float model size)
+
+
 
 
 ### VII. Real-world Application
