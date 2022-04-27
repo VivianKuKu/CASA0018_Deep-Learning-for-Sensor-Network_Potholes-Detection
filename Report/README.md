@@ -119,29 +119,47 @@ To see the demo video, please visit https://www.youtube.com/watch?v=xIY2LgA5Sgo 
 
 Figure 9. Workflow of the TF Lite model deployment 
 
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/52306317/165572762-c11bb86d-67b1-4507-9bc0-4bbdfdf60694.png">
 
 Figure 10. Application scenarios
 
+<img width="700" alt="image" src="https://user-images.githubusercontent.com/52306317/165572832-6760855b-dbb5-49bd-9a10-c2bbbc0e4d07.png">
+
 Figure 11. The real-world application- shooting potholes, plain road and drain covers
+
+<img width="700" alt="image" src="https://user-images.githubusercontent.com/52306317/165572904-aa6b0726-53ec-4ba4-9ce8-ce5455d27d80.png">
+
 
 Figure 12. The real-world application- shooting drain covers and repaired pothole
 
 
 ### VIII. Results and Observations
 1.	Data Collection
+
 More data collected from different environmental settings, such as pictures taken at night, on rainy days, and for different pavements like stone roads, may increase the usability of the application.
+
 2.	Image Processing
+
 Since most potholes have evident edges, edge sharpening or contouring may help detect the sizes and shapes of potholes providing more specific information to record and use.
+
 3.	Model and Experiment
+
 First of all, although the image classification model this project has built has a good performance in a real-world application, the object detection model could be considered in the future because other objects on the road such as drain covers may influence the inferencing accuracy.
 The pre-trained models (VGG16, ResNet50, Inception V3 and MobileNet V2) the project has tested are all trained on the ImageNet dataset. One of the possible reasons for the higher accuracy score on the Inception V3 model is that although the salient parts (potholes) vary in size and locations between the images, the Inception V3 model adopts multiple sizes of kernels operating on the same level, solving the problem of choosing the right kernel size; meanwhile, making the network get a bit “wider” rather than “deeper” to save more computational cost (Raj, 2020).
 In addition, after processing images the accuracy of real-world application significantly increases because the new model eliminates the limitations on specific camera angles and compositions.
+
 4.	Real-world Application
+
 After the initial trials, several observations were found as below:
-•	The height of the camera should be 50~200 cm
-•	The maximum distance of shooting is 7 m
-•	The filming angles should be depression of 20º~90º
-•	The average latency which is the amount of time it takes to run a single inference with a given model is 19 ms; however, the speed of moving vehicles should be slower than 5 m/s which is also below the definition of micro-mobility being less than 25 km/h (= 15 mph = 6.7 m/s).
+
+- The height of the camera should be 50~200 cm
+
+- The maximum distance of shooting is 7 m
+
+- The filming angles should be depression of 20º~90º
+
+- The average latency which is the amount of time it takes to run a single inference with a given model is 19 ms; however, the speed of moving vehicles should be slower than 5 m/s which is also below the definition of micro-mobility being less than 25 km/h (= 15 mph = 6.7 m/s).
+
 
 ### IX. Bibliography
 Anahita Hossein-Pour (2021) The London boroughs with the most and least potholes ranked, MyLondon. Available at: https://www.mylondon.news/news/west-london-news/london-boroughs-most-least-potholes-20293869.
@@ -156,5 +174,3 @@ Marcelino, P. (2018) Transfer learning from pre-trained models, Medium. Availabl
 Raj, B. (2020) A Simple Guide to the Versions of the Inception Network, Medium. Available at: https://towardsdatascience.com/a-simple-guide-to-the-versions-of-the-inception-network-7fc52b863202.
 Transport for London (no date) Electric scooters, Electric scooters. Available at: https://www.tfl.gov.uk/modes/driving/electric-scooter-rental-trial.
 United Nations (2015) SDG Indicators, Sustainable Development Goals. Available at: https://unstats.un.org/sdgs/metadata/?Text=&Goal=&Target=11.2.
-
-<img width="436" alt="image" src="https://user-images.githubusercontent.com/52306317/165565279-1859e0b1-4c7f-46b1-b73b-8b05faf00d80.png">
