@@ -87,18 +87,25 @@ Table 4. Fine-tuning of InceptionV3 model
 Figure 8. Training and validation accuracy and loss of final model
 
 
-
 Table 5. Accuracies of each dataset
+
+<img width="700" alt="Screenshot 2022-04-27 at 17 37 46" src="https://user-images.githubusercontent.com/52306317/165571745-c09284c3-5738-49e0-8b79-fb7941e35cb9.png">
+
 
 
 Table 6. Confusion matrix for the testing dataset
 
+<img width="700" alt="Screenshot 2022-04-27 at 17 37 55" src="https://user-images.githubusercontent.com/52306317/165571846-471399ec-f7d9-4543-b874-8c2c2e5b3449.png">
+
 
 Table 7. Metrics of a confusion matrix for the testing dataset
+
+<img width="700" alt="Screenshot 2022-04-27 at 17 38 14" src="https://user-images.githubusercontent.com/52306317/165572059-21761dbf-21b6-4073-92e3-bc722513bdda.png">
 
 
 Table 8. Model sizes of TF model, TF Lite float model, and TF Lite quantization model
 
+<img width="700" alt="Screenshot 2022-04-27 at 17 38 24" src="https://user-images.githubusercontent.com/52306317/165572171-421472d0-d73c-4b08-b8ca-a04606bab259.png">
 
 
 
@@ -108,7 +115,11 @@ Secondly, considering the complexity of an image classification model, mobile ph
 The real-world experimental results show that the app works well during the daytime and the predicted probability of plain road might be slightly influenced by shadows yet the prediction result is still correct. Current issues include that part of drain covers are be classified as potholes and sometimes repaired potholes still can be seen as potholes if they don’t look smooth, but they actually no longer have any safety issues.
 To see the demo video, please visit https://www.youtube.com/watch?v=xIY2LgA5Sgo (start from 02:21)
 
+<img width="700" alt="image" src="https://user-images.githubusercontent.com/52306317/165572374-4d0b9d2d-ac18-4b58-a3e6-57ad9572237a.png">
+
 Figure 9. Workflow of the TF Lite model deployment 
+
+
 Figure 10. Application scenarios
 
 Figure 11. The real-world application- shooting potholes, plain road and drain covers
