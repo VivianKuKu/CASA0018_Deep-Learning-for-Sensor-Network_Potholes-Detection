@@ -134,21 +134,21 @@ Figure 12. The real-world application- shooting drain covers and repaired pothol
 
 
 ### VIII. Results and Observations
-1.	Data Collection
+#### 1.	Data Collection
 
 More data collected from different environmental settings, such as pictures taken at night, on rainy days, and for different pavements like stone roads, may increase the usability of the application.
 
-2.	Image Processing
+#### 2.	Image Processing
 
 Since most potholes have evident edges, edge sharpening or contouring may help detect the sizes and shapes of potholes providing more specific information to record and use.
 
-3.	Model and Experiment
+#### 3.	Model and Experiment
 
 First of all, although the image classification model this project has built has a good performance in a real-world application, the object detection model could be considered in the future because other objects on the road such as drain covers may influence the inferencing accuracy.
 The pre-trained models (VGG16, ResNet50, Inception V3 and MobileNet V2) the project has tested are all trained on the ImageNet dataset. One of the possible reasons for the higher accuracy score on the Inception V3 model is that although the salient parts (potholes) vary in size and locations between the images, the Inception V3 model adopts multiple sizes of kernels operating on the same level, solving the problem of choosing the right kernel size; meanwhile, making the network get a bit “wider” rather than “deeper” to save more computational cost (Raj, 2020).
 In addition, after processing images the accuracy of real-world application significantly increases because the new model eliminates the limitations on specific camera angles and compositions.
 
-4.	Real-world Application
+#### 4.	Real-world Application
 
 After the initial trials, several observations were found as below:
 
