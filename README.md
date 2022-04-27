@@ -5,18 +5,14 @@
 > Individual project for CASA0018 Deep Learning for Sensor Network
 
 
+### 1. Code: 
 
-## Why Detecting Potholes?
-Road infrastructure is playing an imperative role in achieving the United Nations’ Sustainable Development Goal of providing access to safe, affordable, accessible and sustainable transport systems for all, improving road safety, notably (United Nations, 2015).
-At the city scale, metropolises like London are facilitating micro-mobility diversity including launching bike and e-scooter sharing schemes that will also benefit from the high-quality road infrastructure.
+Project -> CASA0018_Potholes_Detection_Image_Classification_final_version.ipynb
 
-However, London’s councils spent a total of £17.9 million on fixing potholes in 2020 according to an information request to the government (Anahita Hossein-Pour, 2021). It is also recorded that London is only the 62nd best city worldwide for cycling based on data related to infrastructure, road quality, accidents and bike-sharing schemes (luko, 2022). It is generally believed that examination and maintenance of road quality cost an amount of time and money from the local authorities.
+### 2. Final Report: 
 
-In conclusion, in order to provide an instant and sustainable service of road repairs, collaborative crowdsourcing via the mobile app seems to be one of the solutions to continuously share the latest information on potholes, helping improve the efficiency of operation.
+Report -> README.md
 
-
-
-
-## Demo
+### 3. Demo
 
 https://www.youtube.com/watch?v=xIY2LgA5Sgo (Start from 2:21)
